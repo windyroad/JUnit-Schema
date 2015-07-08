@@ -124,6 +124,11 @@ Permission to waive conditions of this license may be requested from Windy Road 
 							<xs:documentation xml:lang="en">Full class name for the class the test method is in.</xs:documentation>
 						</xs:annotation>
 					</xs:attribute>
+					<xs:attribute name="description" type="xs:string" use="optional">
+						<xs:annotation>
+							<xs:documentation xml:lang="en">A short description of the test, usually derived from the test docstring.</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
 					<xs:attribute name="time" type="xs:decimal" use="required">
 						<xs:annotation>
 							<xs:documentation xml:lang="en">Time taken (in seconds) to execute the test</xs:documentation>
