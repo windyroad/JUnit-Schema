@@ -195,7 +195,7 @@ Permission to waive conditions of this license may be requested from Windy Road 
 		</xs:attribute>
 		<xs:attribute name="skipped" type="xs:int" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="en">The total number of tests in the suite</xs:documentation>
+				<xs:documentation xml:lang="en">The total number of ignored or skipped tests in the suite.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="time" type="xs:decimal" use="required">
