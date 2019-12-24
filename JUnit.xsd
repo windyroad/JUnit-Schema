@@ -72,7 +72,7 @@ Permission to waive conditions of this license may be requested from Windy Road 
 				<xs:complexType>
 					<xs:choice minOccurs="0">
 						<xs:element name="skipped" />
-						<xs:element name="error">
+						<xs:element name="error" minOccurs="0" maxOccurs="1">
 			<xs:annotation>
 				<xs:documentation xml:lang="en">Indicates that the test errored.  An errored test is one that had an unanticipated problem. e.g., an unchecked throwable; or a problem with the implementation of the test. Contains as a text node relevant data for the error, e.g., a stack trace</xs:documentation>
 			</xs:annotation>
