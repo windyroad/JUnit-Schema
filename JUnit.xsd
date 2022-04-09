@@ -71,7 +71,22 @@ Permission to waive conditions of this license may be requested from Windy Road 
 			<xs:element name="testcase" minOccurs="0" maxOccurs="unbounded">
 				<xs:complexType>
 					<xs:choice minOccurs="0">
-						<xs:element name="skipped" />
+						<xs:element name="skipped" minOccurs="0" maxOccurs="1">
+							<xs:annotation>
+								<xs:documentation xml:lang="en">Indicates that the test was skipped.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="pre-string">
+										<xs:attribute name="message" type="xs:string">
+											<xs:annotation>
+												<xs:documentation xml:lang="en">The message specifying why the test case was skipped</xs:documentation>
+											</xs:annotation>
+										</xs:attribute>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
 						<xs:element name="error" minOccurs="0" maxOccurs="1">
 							<xs:annotation>
 								<xs:documentation xml:lang="en">Indicates that the test errored.  An errored test is one that had an unanticipated problem. e.g., an unchecked throwable; or a problem with the implementation of the test. Contains as a text node relevant data for the error, e.g., a stack trace</xs:documentation>
