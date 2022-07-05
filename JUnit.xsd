@@ -145,6 +145,11 @@ Permission to waive conditions of this license may be requested from Windy Road 
 							<xs:documentation xml:lang="en">Time taken (in seconds) to execute the test</xs:documentation>
 						</xs:annotation>
 					</xs:attribute>
+					<xs:attribute name="memory" type="xs:integer" use="optional">
+						<xs:annotation>
+							<xs:documentation xml:lang="en">Peak memory usage (in bytes) of the test</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
 				</xs:complexType>
 			</xs:element>
 			<xs:element name="system-out">
